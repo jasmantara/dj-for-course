@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Login DCHUB
-        uses: docker/login-action@v1
+        uses: docker/login-action@v3
         with:
           username: ${{ secrets.DCHUB_USER }}
           password: ${{ secrets.DCHUB_TOKEN }}
